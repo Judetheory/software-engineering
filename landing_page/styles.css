@@ -1,0 +1,9 @@
+* {box-sizing: content-box;}
+.top{ background-color: #1f2937;
+color: white;}
+.logo img {height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.header{ display: flex;
+padding: 16px;}
