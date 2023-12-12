@@ -76,6 +76,7 @@ button:hover {
     background-color: grey;
     margin-top: 45px;
     display: flex;
+    
 }
 .testimony .content {
     text-align: center;
@@ -84,10 +85,26 @@ button:hover {
     padding: 24px 36px;
 }
 
-.action{
-    display: flex;
-
+/*****CONTACT*****/
+.action {
+    background-color: rgb(87, 87, 233);
+    margin: 50px 165px;
+    padding: 50px;
+    border-radius: 10px;
+    border: dashed 2px rgb(6, 27, 124);
 }
-.action .contact{text-align: center;
-    background-color: #1f2937;
+.action .contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.action .contact p{
+    font-size: 24px;
+}
+
+.footer {
+    background-color: rgb(6,6,27);
+    text-align: center;
+    color: white;
+    padding: 10px 10px;
 }
