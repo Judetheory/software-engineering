@@ -1,9 +1,93 @@
 * {box-sizing: content-box;}
 .top{ background-color: #1f2937;
 color: white;}
+/*****HEADER*****/
 .logo img {height: 100px;
     width: 100px;
     border-radius: 50%;
 }
 .header{ display: flex;
-padding: 16px;}
+padding: 16px;
+justify-content: space-between;
+}
+
+nav a {
+text-decoration: none;
+text-align: center;
+font-size: 18px;
+padding: 14px 16px;
+color: white;}
+nav a:hover{
+    background-color: aliceblue;
+    color: rgb(1, 1, 17);
+    transition: 1s;
+    border-radius: 25px;
+}
+/*****FRONT PAGE INFORMATION******/
+
+.front-page{display: flex;
+padding: 65px 30px;}
+
+.front-page img{height: 300px;
+width: 500px;
+border-radius: 10px;
+justify-content: space-between;
+}
+
+.front-info {padding: 12px 50px;}
+
+button {
+    font-size: 24px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(6, 6, 27);
+    padding: 12px 30px;
+}
+button:hover {
+    color: rgb(6,6,27);
+    background-color: white;
+    transition: 1s;
+    border-radius: 25px;
+}
+
+/******AREAR OF INTEREST*****/
+.specialization{padding: 15px 15px;}
+.specialization h1 {text-align: center;
+    color: rgb(6,6,27);}
+
+.specialization .cards{
+    display: flex;
+    justify-content: center;
+}
+.card {
+    height: 400px;
+    width: 200px;
+    margin: 8px 15px;
+    text-align: center;
+}
+.card img {
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    border: solid 3px black;
+}
+/*****TESTIMONIES*****/
+.testimony{
+    background-color: grey;
+    margin-top: 45px;
+    display: flex;
+}
+.testimony .content {
+    text-align: center;
+    font-size: 36px;
+    font: italic;
+    padding: 24px 36px;
+}
+
+.action{
+    display: flex;
+
+}
+.action .contact{text-align: center;
+    background-color: #1f2937;
+}
