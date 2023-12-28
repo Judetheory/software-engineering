@@ -38,10 +38,24 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-let playerSelection = "rock";
+function game() {
+    for (let round=0;round<=5;round++){
+        playRound()
+    }
+    if (computerScore===playerScore){
+        console.log("Draw Game. Try again");
+    } else if (computerScore>playerScore){
+        console.log("You lose!!!");
+    } else {
+        console.log("You won!!!");
+    }
+}
+let pick = window.prompt("Make your choice! rock, paper or scissors");
+let playerSelection = pick.toLowerCase();
 let computerSelection = getComputerChoice();
 let computerScore = 0;
 let playerScore = 0;
 console.log(playRound(playerSelection,computerSelection));
 console.log(playerScore);
 console.log(computerScore);
+console.log(game());
