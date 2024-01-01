@@ -13,15 +13,18 @@ btn.addEventListener("click", () =>  {
     lis.appendChild(btnf);
     btnf.textContent = "Delete"
     lists.appendChild(lis)
+
+
+    btnf.addEventListener("click", () => {
+        lists.removeChild(lis) 
+    })
+    input.focus();
     
 })
 
-input.focus()
 
-function Delete() {
-    lists.removeChild(lis) 
-}
-btnf.addEventListener("click", Delete)
+
+
 
 
 /**function getComputerChoice(){
