@@ -1,5 +1,30 @@
+lists = document.querySelector("ul")
+input = document.querySelector("input")
+btn = document.querySelector("button")
 
-function getComputerChoice(){
+btn.addEventListener("click", () =>  {
+    const text = input.value;
+    input.value = '';
+    const lis = document.createElement("li");
+    const spn = document.createElement("span");
+    const btnf = document.createElement("button");
+    lis.appendChild(spn);
+    spn.textContent = text;
+    lis.appendChild(btnf);
+    btnf.textContent = "Delete"
+    lists.appendChild(lis)
+    
+})
+
+input.focus()
+
+function Delete() {
+    lists.removeChild(lis) 
+}
+btnf.addEventListener("click", Delete)
+
+
+/**function getComputerChoice(){
     let num = Math.floor(Math.random()*3)
     if (num===0){
         return "rock";
@@ -58,4 +83,4 @@ let playerScore = 0;
 console.log(playRound(playerSelection,computerSelection));
 console.log(playerScore);
 console.log(computerScore);
-console.log(game());
+console.log(game());**/
