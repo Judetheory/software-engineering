@@ -1,0 +1,25 @@
+* {box-sizing: content-box;}
+body {background-color: rgb(6, 136, 93);}
+/****HEADER*****/
+.header {display: flex;
+padding: 20px;}
+.header h1 {padding-left: 250px; padding-top: 30px;}
+.header img {border-radius: 50%;
+height: 150px;
+width: 150px;}
+/*****SCORE BOARD***/
+.score {text-align: center;
+font-size: large; color: rgb(1, 1, 15);
+font-weight: bold;}
+
+/****COMMENTARY*****/
+.comment {text-align: center;
+font-size: medium;
+font-weight: 500;
+padding: 20px;}
+/******SIGNS*******/
+.signs {display: flex; justify-content: space-evenly;}
+button {height: 200px; width: 200px;}
+.signs button img {height: 200px; width: 200px; flex: 1;}
+button:hover {cursor: pointer; background-color: rgb(180, 5, 19);
+border-radius: 10px;}
