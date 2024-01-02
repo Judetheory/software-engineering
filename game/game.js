@@ -19,6 +19,8 @@ function computerGuess() {
 let humanScore = 0
 let computerScore = 0
 
+
+
 rock.addEventListener("click", () => {
    if (computerGuess() === "rock"){
       comment.textContent = "Same rock, try again"
@@ -34,6 +36,17 @@ rock.addEventListener("click", () => {
    
    computer.textContent = computerScore
    human.textContent= humanScore
+
+   if (humanScore < 5 && computerScore === 5) {
+      comment.textContent = "GAMEOVER YOU LOSS "
+   } else if (humanScore ===5 && computerScore < 5){
+      comment.textContent = "YOU WON CONGRATULATION!!!"
+   } else {
+      return 
+   }
+   computerScore = 0;
+   humanScore = 0;
+
 })
 
 paper.addEventListener("click", () => {
@@ -51,6 +64,16 @@ paper.addEventListener("click", () => {
 
    computer.textContent = computerScore
    human.textContent= humanScore
+
+   if (humanScore < 5 && computerScore === 5) {
+      comment.textContent = "GAMEOVER YOU LOSS "
+   } else if (humanScore ===5 && computerScore < 5){
+      comment.textContent = "YOU WON CONGRATULATION!!!"
+   } else {
+      return 
+   }
+   computerScore = 0;
+   humanScore = 0;
 })
 
 scissors.addEventListener("click", () => {
@@ -68,4 +91,14 @@ scissors.addEventListener("click", () => {
 
    computer.textContent = computerScore
    human.textContent= humanScore
+
+   if (humanScore < 5 && computerScore === 5) {
+      comment.textContent = "GAMEOVER YOU LOSS "
+   } else if (humanScore ===5 && computerScore < 5){
+      comment.textContent = "YOU WON CONGRATULATION!!!"
+   } else {
+      return 
+   }
+   computerScore = 0;
+   humanScore = 0;
 })
