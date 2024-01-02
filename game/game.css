@@ -10,7 +10,8 @@ width: 150px;}
 /*****SCORE BOARD***/
 .score {text-align: center;
 font-size: large; color: rgb(1, 1, 15);
-font-weight: bold;}
+font-weight: bold;
+border: 2px red dashed;}
 
 /****COMMENTARY*****/
 .comment {text-align: center;
